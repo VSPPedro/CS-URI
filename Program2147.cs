@@ -25,6 +25,7 @@ namespace CS_Uri_Awnsers
             {
                 word = Console.ReadLine();
                 number = word.Length * 0.01;
+                //Format the output to have two decimals and a ".", not a ","
                 word = number.ToString("####0.00").Replace(",",".");
                 Console.WriteLine(word);
             }
