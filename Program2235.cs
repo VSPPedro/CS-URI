@@ -31,10 +31,6 @@ namespace CS_Uri_Awnsers
             {
                 Console.WriteLine("N");
             }
-
-            Console.WriteLine("Press enter to close...");
-            Console.ReadLine();
-            Console.ReadLine();
         }
     }
 }
