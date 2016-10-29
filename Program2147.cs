@@ -24,10 +24,15 @@ namespace CS_Uri_Awnsers
             for(int i = 0; i < numberOfWords; i++)
             {
                 word = Console.ReadLine();
+<<<<<<< HEAD
                 number = word.Length * 0.01;
                 //Format the output to have two decimals and a ".", not a ","
                 word = number.ToString("####0.00").Replace(",",".");
                 Console.WriteLine(word);
+=======
+                //Format to two decimal places after "."
+                Console.WriteLine("{0:N2}", word.Length * 0.01);
+>>>>>>> 799673c16592e99e53555f6b1bedc383959c400a
             }
         }
     }
