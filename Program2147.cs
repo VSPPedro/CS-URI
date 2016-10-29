@@ -12,18 +12,21 @@ namespace CS_Uri_Awnsers
         {
             int numberOfWords;
             string word;
+            double number;
 
             //To print "." not "," in numeric values
-            System.Globalization.CultureInfo customCulture = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
-            customCulture.NumberFormat.NumberDecimalSeparator = ".";
-            System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
+            //System.Globalization.CultureInfo customCulture = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
+            //customCulture.NumberFormat.NumberDecimalSeparator = ".";
+            //System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
 
             numberOfWords = Convert.ToInt16(Console.ReadLine());
 
             for(int i = 0; i < numberOfWords; i++)
             {
                 word = Console.ReadLine();
-                Console.WriteLine("{0:N2}", word.Length * 0.01);
+                number = word.Length * 0.01;
+                word = number.ToString("####0.00").Replace(",",".");
+                Console.WriteLine(word);
             }
         }
     }
