@@ -23,6 +23,7 @@ namespace CS_Uri_Awnsers
             for(int i = 0; i < numberOfWords; i++)
             {
                 word = Console.ReadLine();
+                //Format to two decimal places after "."
                 Console.WriteLine("{0:N2}", word.Length * 0.01);
             }
         }
