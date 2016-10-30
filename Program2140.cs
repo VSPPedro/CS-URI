@@ -60,7 +60,7 @@ namespace CS_Uri_Awnsers
         {
             int[] notas = { 2, 5, 10, 20, 50, 100 };
 
-            if (troco > 100)
+            if (troco >= 100)
             {
                 troco -= 100;
                 quantNotas++;
