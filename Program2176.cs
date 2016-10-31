@@ -29,8 +29,6 @@ namespace CS_Uri_Awnsers
             {
                 Console.WriteLine(bits + "0");
             }
-
-            Console.ReadLine();
         } 
     }
 }
